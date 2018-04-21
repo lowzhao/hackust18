@@ -3,7 +3,7 @@ page-testing {
 }
 
 #cardHeader{
-	border-bottom: grey 2px solid;
+	border-bottom: grey 1px solid;
 	padding-bottom:0.5em;
 }
 
@@ -60,4 +60,23 @@ page-testing {
 
 .fontM{
 	font-size:1.5em;
+}
+
+.center{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+
+	width:100%;
+}
+
+.removeTopBorder{
+	border-top:none;
+}
+
+.marginBottom{
+	margin-bottom:1em;
+	margin-top:1em;
+	
 }
