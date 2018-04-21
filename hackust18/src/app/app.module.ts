@@ -20,8 +20,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { AddGoalComponent } from '../components/add-goal/add-goal';
-import { ChatBotPage } from '../pages/chat-bot/chat-bot';
-import { ChatServiceProvider } from '../providers/chat-service/chat-service';
+
+import { CalculatorPage } from '../pages/calculator/calculator';
 
 
 @NgModule({
@@ -37,7 +37,7 @@ import { ChatServiceProvider } from '../providers/chat-service/chat-service';
     AddGoalComponent,
     GraphpagePage,
 	CalendarPage,
-	ChatBotPage
+	CalculatorPage
 	
   ],
   imports: [
@@ -57,15 +57,13 @@ import { ChatServiceProvider } from '../providers/chat-service/chat-service';
     AddGoalComponent,
     GraphpagePage,
 	CalendarPage,
-	ChatBotPage
-	
+	CalculatorPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
 	{provide: ErrorHandler, useClass: IonicErrorHandler},
-	Camera,
-    ChatServiceProvider
+	Camera
   ]
 })
 export class AppModule {}
