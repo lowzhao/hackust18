@@ -20,6 +20,9 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { AddGoalComponent } from '../components/add-goal/add-goal';
+import { Calendar } from '@ionic-native/calendar';
+import { AddEventPage } from '../pages/add-event/add-event';
+import { DatePickerModule } from 'ionic3-datepicker';
 
 
 @NgModule({
@@ -39,7 +42,8 @@ import { AddGoalComponent } from '../components/add-goal/add-goal';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    DatePickerModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -60,7 +64,7 @@ import { AddGoalComponent } from '../components/add-goal/add-goal';
     StatusBar,
     SplashScreen,
 	{provide: ErrorHandler, useClass: IonicErrorHandler},
-	Camera
+	Camera, Calendar, DatePickerModule
   ]
 })
 export class AppModule {}
