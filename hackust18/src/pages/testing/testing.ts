@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { AboutPage } from '../about/about';
 /**
  * Generated class for the TestingPage page.
  *
@@ -10,16 +10,23 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-testing',
-  templateUrl: 'testing.html',
+	selector: 'page-testing',
+	templateUrl: 'testing.html',
 })
-export class TestingPage {
+export class TestingPage
+{
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+	constructor(public navCtrl: NavController, public navParams: NavParams)
+	{
+	}
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad TestingPage');
-  }
+	ionViewDidLoad()
+	{
+		console.log('ionViewDidLoad TestingPage');
+	}
+	onClick()
+	{
+		this.navCtrl.push(AboutPage);
+	}
 
 }

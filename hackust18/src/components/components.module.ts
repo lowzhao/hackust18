@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
-import { TestingComponent } from './testing/testing';
 @NgModule({
-	declarations: [TestingComponent],
+	declarations: [],
 	imports: [],
-	exports: [TestingComponent]
+	exports: []
 })
 export class ComponentsModule {}
