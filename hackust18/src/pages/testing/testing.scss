@@ -1,3 +1,63 @@
 page-testing {
 
 }
+
+#cardHeader{
+	border-bottom: grey 2px solid;
+	padding-bottom:0.5em;
+}
+
+
+.small{
+	// height: 20px;
+	width: 100%;
+	font-size:1em;
+}
+
+.rmPadding{
+	padding:0;
+}
+
+.TextL{
+	font-size:2em;
+}
+
+.green{
+	color:lightgreen;
+}
+
+
+.progress-outer {
+	width: 96%;
+	margin: 0.5em;
+	margin-bottom:2px;
+	padding: 3px;
+	text-align: center;
+	background-color: #f4f4f4;
+	border: 1px solid #dcdcdc;
+	color: #fff;
+	border-radius: 20px;
+}
+
+
+
+.progress{
+	margin:0.5em 0.6em;
+	margin-bottom:0;
+	font-size: 2em;
+}
+
+.progress-inner {
+	min-width: 15%;
+	white-space: nowrap;
+	overflow: hidden;
+	padding: 5px;
+	border-radius: 20px;
+	background-color: map-get($colors, primary);
+
+}
+
+
+.fontM{
+	font-size:1.5em;
+}
