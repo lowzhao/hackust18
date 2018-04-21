@@ -4,6 +4,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { LoginPage } from '../pages/login/login';
+import { timer } from 'rxjs/observable/timer';
+import { GraphpagePage } from '../pages/graphpage/graphpage';
 
 @Component({
   templateUrl: 'app.html'
@@ -11,12 +13,18 @@ import { LoginPage } from '../pages/login/login';
 export class MyApp {
   rootPage:any = LoginPage;
 
+  showSplash = true;
+
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
-      // Okay, so the platform is ready and our plugins are available.
-      // Here you can do any higher level native things you might need.
+      //this.initializeApp();
       statusBar.styleDefault();
-      splashScreen.hide();
+      splashScreen.hide();  // <-- hide static image
+
+      timer(3000).subscribe(() => this.showSplash = false) 
+
     });
   }
+
+
 }
