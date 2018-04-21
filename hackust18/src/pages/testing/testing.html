@@ -72,13 +72,14 @@
   </ion-card>
 
 
-
+<!-- 
   <div>___________________________________</div>
-  <br>
-  <add-goal></add-goal>
+  <br> -->
+  <div *ngIf="adding"> <add-goal ></add-goal></div>
+ 
 </ion-content>
 <ion-footer class="removeTopBorder">
 	<div class="center">
-		<button  ion-button round class="marginBottom">+ Add Goals</button>
+		<button  ion-button round class="marginBottom" (click)="clicked()">+ Add Goals</button>
 	</div>
 </ion-footer>

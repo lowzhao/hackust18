@@ -16,7 +16,7 @@ import { AboutPage } from '../about/about';
 export class TestingPage
 {
 	progress : number;
-
+	adding : boolean;
 
 	constructor(public navCtrl: NavController, public navParams: NavParams)
 	{
@@ -26,10 +26,13 @@ export class TestingPage
 	{
 		this.progress = 10;
 		console.log('ionViewDidLoad TestingPage');
+		this.adding = false;
 	}
-	onClick()
+	clicked()
 	{
-		this.navCtrl.push(AboutPage);
+		// this.navCtrl.push(AboutPage);
+		this.adding = true;
+
 	}
 
 }
