@@ -80,6 +80,6 @@
 </ion-content>
 <ion-footer class="removeTopBorder">
 	<div class="center">
-		<button  ion-button round class="marginBottom" (click)="clicked()">+ Add Goals</button>
+		<button  ion-button round class="marginBottom" (click)="clicked()"><div *ngIf="!adding">+ Add Goals</div><div *ngIf="adding">Done</div></button>
 	</div>
 </ion-footer>
