@@ -4,12 +4,14 @@ page-testing {
 
 #cardHeader{
 	border-bottom: grey 2px solid;
+	padding-bottom:0.5em;
 }
 
 
 .small{
 	// height: 20px;
 	width: 100%;
+	font-size:1em;
 }
 
 .rmPadding{
@@ -17,7 +19,7 @@ page-testing {
 }
 
 .TextL{
-	font-size:40px;
+	font-size:2em;
 }
 
 .green{
@@ -27,13 +29,22 @@ page-testing {
 
 .progress-outer {
 	width: 96%;
-	margin: 10px;
+	margin: 0.5em;
+	margin-bottom:2px;
 	padding: 3px;
 	text-align: center;
 	background-color: #f4f4f4;
 	border: 1px solid #dcdcdc;
 	color: #fff;
 	border-radius: 20px;
+}
+
+
+
+.progress{
+	margin:0.5em 0.6em;
+	margin-bottom:0;
+	font-size: 2em;
 }
 
 .progress-inner {
@@ -44,4 +55,9 @@ page-testing {
 	border-radius: 20px;
 	background-color: map-get($colors, primary);
 
+}
+
+
+.fontM{
+	font-size:1.5em;
 }
