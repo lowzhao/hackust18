@@ -17,6 +17,8 @@ import { LoginPage } from '../pages/login/login';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import { AddGoalComponent } from '../components/add-goal/add-goal';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 	TabsPage,
 	TestingPage,
 	Testing2Page,
-	LoginPage
+	LoginPage,
+    AddGoalComponent
 	
   ],
   imports: [
@@ -43,7 +46,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     TabsPage,
 	TestingPage,
 	Testing2Page,
-	LoginPage
+	LoginPage,
+    AddGoalComponent
 	
   ],
   providers: [
