@@ -6,6 +6,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { LoginPage } from '../pages/login/login';
 import { timer } from 'rxjs/observable/timer';
 import { GraphpagePage } from '../pages/graphpage/graphpage';
+import { CalendarPage } from '../pages/calendar/calendar';
 
 @Component({
   templateUrl: 'app.html'

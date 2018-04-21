@@ -12,6 +12,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { TestingPage } from '../pages/testing/testing';
 import { Testing2Page } from '../pages/testing2/testing2';
 import { GraphpagePage } from '../pages/graphpage/graphpage';
+import { CalendarPage } from '../pages/calendar/calendar';
 
 import { LoginPage } from '../pages/login/login';
 
@@ -32,7 +33,8 @@ import { AddGoalComponent } from '../components/add-goal/add-goal';
 	Testing2Page,
 	LoginPage,
     AddGoalComponent,
-    GraphpagePage
+    GraphpagePage,
+    CalendarPage
 	
   ],
   imports: [
@@ -50,7 +52,8 @@ import { AddGoalComponent } from '../components/add-goal/add-goal';
 	Testing2Page,
 	LoginPage,
     AddGoalComponent,
-    GraphpagePage
+    GraphpagePage,
+    CalendarPage
 	
   ],
   providers: [
