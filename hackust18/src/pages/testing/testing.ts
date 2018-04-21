@@ -15,9 +15,12 @@ import { AboutPage } from '../about/about';
 })
 export class TestingPage
 {
+	progress : number;
+
 
 	constructor(public navCtrl: NavController, public navParams: NavParams)
 	{
+		 this.progress = 10;
 	}
 
 	ionViewDidLoad()

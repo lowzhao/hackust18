@@ -7,12 +7,79 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>testing</ion-title>
+    <ion-title text-center>Goal</ion-title>
   </ion-navbar>
-  
+
 </ion-header>
 
 
 <ion-content padding>
-    <add-goal></add-goal>
+  <ion-card>
+    <ion-card-header id="cardHeader">
+      <ion-grid class="rmPadding">
+        <ion-row>
+          <ion-col col-6 class="rmPadding">
+            <div class="TextL">Home</div>
+          </ion-col>
+          <ion-col col-6 class="rmPadding">
+            <ion-grid text-right class="">
+              <ion-row text-right class="small">
+                <div class="small" text-right>Espected to Reach</div>
+              </ion-row>
+              <ion-row text-right class="small">
+                <div class="small green" text-right>15/02/2023</div>
+              </ion-row>
+            </ion-grid>
+          </ion-col>
+
+        </ion-row>
+      </ion-grid>
+    </ion-card-header>
+
+    <ion-list>
+      <ion-item>
+        <div class="progress">Progress</div>
+        <div class="progress-outer">
+          <div class="progress-inner" [style.width]="progress + '%'">
+            {{progress}}%
+          </div>
+        </div>
+      </ion-item>
+
+      <ion-item>
+        <ion-grid>
+          <ion-row>
+            <ion-col col-6>
+              <ion-row>
+                Funds
+              </ion-row>
+              <ion-row>
+                $40,000
+              </ion-row>
+            </ion-col>
+            <ion-col col-6>
+              <ion-row>
+                Funds
+              </ion-row>
+              <ion-row>
+                $40,000
+              </ion-row>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-item>
+
+      <button ion-item>
+        <ion-icon name="cart" item-start></ion-icon>
+        Shopping
+      </button>
+
+
+
+    </ion-list>
+  </ion-card>
+
+  <div>___________________________________</div>
+  <br>
+  <add-goal></add-goal>
 </ion-content>
