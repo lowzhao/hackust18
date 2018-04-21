@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
+import { AddGoalComponent } from './add-goal/add-goal';
 @NgModule({
-	declarations: [],
+	declarations: [AddGoalComponent],
 	imports: [],
-	exports: []
+	exports: [AddGoalComponent]
 })
 export class ComponentsModule {}
