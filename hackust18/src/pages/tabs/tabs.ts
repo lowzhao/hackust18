@@ -5,6 +5,7 @@ import { ContactPage } from '../contact/contact';
 import { HomePage } from '../home/home';
 import { TestingPage } from '../testing/testing'; 
 import { Testing2Page } from '../testing2/testing2'; 
+import { GraphpagePage } from '../graphpage/graphpage';
 
 @Component({
   templateUrl: 'tabs.html'
@@ -14,8 +15,9 @@ export class TabsPage {
   tab1Root = HomePage;
   tab2Root = AboutPage;
   tab3Root = ContactPage;
-  tab4Root = TestingPage	;
-  tab5Root = Testing2Page;  
+  tab4Root = TestingPage;
+  tab5Root = GraphpagePage;
+  //Testing2Page;  
 
   constructor() {
 
