@@ -18,19 +18,6 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 
-import {AngularFireModule} from 'angularfire2';
-import { AngularFireAuthModule } from 'angularfire2/auth';
-
-var config = {
-    apiKey: "AIzaSyC9nw0XGD4LtcSqnD5N32uY-L3Y51Pzf3o",
-    authDomain: "szjzyh.firebaseapp.com",
-    databaseURL: "https://szjzyh.firebaseio.com",
-    projectId: "szjzyh",
-    storageBucket: "szjzyh.appspot.com",
-    messagingSenderId: "226412503488"
-  };
-
-
 @NgModule({
   declarations: [
 	MyApp,
@@ -45,8 +32,6 @@ var config = {
   ],
   imports: [
     BrowserModule,
-	AngularFireModule.initializeApp(config),
-	AngularFireAuthModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
