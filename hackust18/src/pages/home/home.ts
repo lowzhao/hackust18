@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
 
 import { NavController, ActionSheetController, LoadingController } from 'ionic-angular';
-import { Camera } from 'ionic-native';
+// import { Camera } from '@ionic-native/camera';
+
+// import { Cordova, Plugin, IonicNativePlugin } from '@ionic-native/core';
 
 @Component({
   selector: 'page-home',
@@ -47,35 +49,35 @@ export class HomePage {
   getPicture(sourceType: number) {
     // You can check the values here:
     // https://github.com/driftyco/ionic-native/blob/master/src/plugins/camera.ts
-    Camera.getPicture({
-      quality: 100,
-      destinationType: 0, // DATA_URL
-      sourceType,
-      allowEdit: true,
-      saveToPhotoAlbum: false,
-      correctOrientation: true
-    }).then((imageData) => {
-      this.srcImage = 'data:image/jpeg;base64,${imageData}';
-    }, (err) => {
-      console.log('ERROR -> ${JSON.stringify(err)}');
-    });
+    // Camera.getPicture({
+    //   quality: 100,
+    //   destinationType: 0, // DATA_URL
+    //   sourceType,
+    //   allowEdit: true,
+    //   saveToPhotoAlbum: false,
+    //   correctOrientation: true
+    // }).then((imageData) => {
+    //   this.srcImage = 'data:image/jpeg;base64,${imageData}';
+    // }, (err) => {
+    //   console.log('ERROR -> ${JSON.stringify(err)}');
+    // });
   }
 
-  analyze() {
-    let loader = this.loadingCtrl.create({
-     content: 'Please wait...'
-    });
-    loader.present();
-    (<any>window).OCRAD(document.getElementById('image'), text => {
-      loader.dismissAll();
-      alert(text);
-      console.log(text);
-    });
-  }
+//   analyze() {
+//     let loader = this.loadingCtrl.create({
+//      content: 'Please wait...'
+//     });
+//     loader.present();
+//     (<any>window).OCRAD(document.getElementById('image'), text => {
+//       loader.dismissAll();
+//       alert(text);
+//       console.log(text);
+//     });
+//   }
 
-  restart() {
-    this.srcImage = '';
-    this.presentActionSheet();
-  }
+//   restart() {
+//     this.srcImage = '';
+//     this.presentActionSheet();
+//   }
 
 }

@@ -1,6 +1,7 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
+import { Camera } from '@ionic-native/camera';
 import { MyApp } from './app.component';
 
 import { AboutPage } from '../pages/about/about';
@@ -16,9 +17,23 @@ import { LoginPage } from '../pages/login/login';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+
+import {AngularFireModule} from 'angularfire2';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+
+var config = {
+    apiKey: "AIzaSyC9nw0XGD4LtcSqnD5N32uY-L3Y51Pzf3o",
+    authDomain: "szjzyh.firebaseapp.com",
+    databaseURL: "https://szjzyh.firebaseio.com",
+    projectId: "szjzyh",
+    storageBucket: "szjzyh.appspot.com",
+    messagingSenderId: "226412503488"
+  };
+
+
 @NgModule({
   declarations: [
-    MyApp,
+	MyApp,
     AboutPage,
     ContactPage,
     HomePage,
@@ -30,6 +45,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   imports: [
     BrowserModule,
+	AngularFireModule.initializeApp(config),
+	AngularFireAuthModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -47,7 +64,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+	{provide: ErrorHandler, useClass: IonicErrorHandler},
+	Camera
   ]
 })
 export class AppModule {}
