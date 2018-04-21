@@ -9,14 +9,18 @@
     </ion-item>
   
     <ion-item>
-    <ion-input type="number" placeholder="$"></ion-input>
+    <ion-label color="primary">$: </ion-label>
+    <ion-input type="number" ></ion-input>
     </ion-item>
+
 
       <ion-list>
     <ion-list-header >
-      <span id="title">Proportion of salary:</span>
-      <ion-badge class="badge" item-end color="dark">Car {{structure.lower}}%</ion-badge>
-      <ion-badge class="badge" item-end color="dark">iPhone {{structure.upper - structure.lower}}%</ion-badge>
+        <ion-grid>
+            <ion-row><span id="title">Proportion of salary:</span></ion-row>
+            <ion-row class="badge"><ion-badge  item-end color="dark">Car {{structure.lower}}%</ion-badge>
+            <ion-badge item-end color="dark">iPhone {{structure.upper - structure.lower}}%</ion-badge></ion-row>
+            </ion-grid>
     </ion-list-header>
     <ion-item>
       <ion-range dualKnobs="true" pin="false" [(ngModel)]="structure" (ionChange)="onChange($event)" color="dark">

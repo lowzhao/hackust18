@@ -74,7 +74,7 @@ export class CalendarPage {
         this.navCtrl.push(GraphpagePage);
       }
       else{
-        //this.navCtrl.push('BalancePage');
+        //this.navCtrl.push(BalancePage);
       }
   }
 

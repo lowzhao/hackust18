@@ -24,6 +24,8 @@ import { Calendar } from '@ionic-native/calendar';
 import { AddEventPage } from '../pages/add-event/add-event';
 import { DatePickerModule } from 'ionic3-datepicker';
 
+import { CalculatorPage } from '../pages/calculator/calculator';
+
 
 @NgModule({
   declarations: [
@@ -37,7 +39,8 @@ import { DatePickerModule } from 'ionic3-datepicker';
 	LoginPage,
     AddGoalComponent,
     GraphpagePage,
-    CalendarPage
+	CalendarPage,
+	CalculatorPage
 	
   ],
   imports: [
@@ -57,8 +60,8 @@ import { DatePickerModule } from 'ionic3-datepicker';
 	LoginPage,
     AddGoalComponent,
     GraphpagePage,
-    CalendarPage
-	
+	CalendarPage,
+	CalculatorPage
   ],
   providers: [
     StatusBar,
