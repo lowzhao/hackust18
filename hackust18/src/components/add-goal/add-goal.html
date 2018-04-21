@@ -2,8 +2,28 @@
 <div>
   {{text}}
 </div>
-asdasd
+
     <ion-item>
-    <ion-label color="primary">sasdasdas</ion-label>
+    <ion-label color="primary">Item name: </ion-label>
     <ion-input placeholder="Text Input"></ion-input>
-  </ion-item>
+    </ion-item>
+  
+    <ion-item>
+    <ion-input type="number" placeholder="$"></ion-input>
+    </ion-item>
+
+      <ion-list>
+    <ion-list-header>
+      Structure
+      <ion-badge item-end color="dark">{{structure.lower}}</ion-badge>
+      <ion-badge item-end color="dark">{{structure.upper}}</ion-badge>
+    </ion-list-header>
+    <ion-item>
+      <ion-range dualKnobs="true" pin="true" [(ngModel)]="structure" (ionChange)="onChange($event)" color="dark">
+        <ion-label range-left>-0</ion-label>
+        <ion-label range-right>100</ion-label>
+      </ion-range>
+    </ion-item>
+  </ion-list>
+
+
