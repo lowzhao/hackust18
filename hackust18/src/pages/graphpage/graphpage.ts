@@ -24,20 +24,45 @@ export class GraphpagePage {
     doughnutChart: any;
     //lineChart: any;
 
+    x: any;
+    p1: any;
+    p2: any;
+    p3: any;
+    p4: any;
+    p5: any;
+    p6: any;
+                
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
+  
+
+
   ionViewDidLoad() {
     //console.log('ionViewDidLoad GraphpagePage');
-  
+  		this.x = 500 + 165 + 150 + 100 + 65 + 50;
+  		this.p1 = 100 * (500/this.x).toFixed(2);
+  		this.p2 = 100 * (165/this.x).toFixed(2);
+		this.p3 = 100 * (150/this.x).toFixed(2);
+  		this.p4 = 100 * (100/this.x).toFixed(2);
+  		this.p5 = 100 * (65/this.x).toFixed(2);
+  		this.p6 = 100 * (50/this.x).toFixed(2);
+
+
         this.doughnutChart = new Chart(this.doughnutCanvas.nativeElement, {
- 
+ 			
             type: 'doughnut',
             data: {
-                labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+            	labels: ["Rent " + this.p1 + "% (HK$ "+ (this.p1*this.x/100).toFixed(2) + ")", 
+            	"Groceries "+ this.p2 + "% (HK$ "+ (this.p2*this.x/100).toFixed(2) + ")", 
+            	"Entertainment " + this.p3 + "% (HK$ "+ (this.p3*this.x/100).toFixed(2) + ")", 
+            	"Cell Phone " + this.p4 + "% (HK$ "+ (this.p4*this.x/100).toFixed(2) + ")", 
+            	"Insurance " + this.p5 + "% (HK$ "+ (this.p5*this.x/100).toFixed(2) + ")", 
+            	"Transportation "+ this.p6 + "% (HK$ "+ (this.p6*this.x/100).toFixed(2) + ")"],
                 datasets: [{
                     label: '# of Votes',
-                    data: [12, 19, 3, 5, 2, 3],
+                    data: [500, 165, 150, 100, 65, 50],
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.2)',
                         'rgba(54, 162, 235, 0.2)',
@@ -55,7 +80,21 @@ export class GraphpagePage {
                         "#FFCE56"
                     ]
                 }]
+            },
+            options : {
+            maintainAspectRatio: false,
+            layout: {
+               padding: {
+                  left     : 0,
+                  right    : 0,
+                  top      : 0,
+                  bottom   : 0
+               }
+            },
+            animation: {
+               duration : 500
             }
+         }
  
         });
 
