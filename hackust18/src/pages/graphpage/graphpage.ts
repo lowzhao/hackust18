@@ -42,12 +42,12 @@ export class GraphpagePage {
   ionViewDidLoad() {
     //console.log('ionViewDidLoad GraphpagePage');
   		this.x = 500 + 165 + 150 + 100 + 65 + 50;
-  		this.p1 = (100 * 500/this.x).toFixed(2);
-  		this.p2 = (100 * 165/this.x).toFixed(2);
-		this.p3 = (100 * 150/this.x).toFixed(2);
-  		this.p4 = (100 * 100/this.x).toFixed(2);
-  		this.p5 = (100 * 65/this.x).toFixed(2);
-  		this.p6 = (100 * 50/this.x).toFixed(2);
+  		this.p1 = (100 * (500/this.x)).toFixed(2);
+  		this.p2 = (100 * (165/this.x)).toFixed(2);
+		this.p3 = (100 * (150/this.x)).toFixed(2);
+  		this.p4 = (100 * (100/this.x)).toFixed(2);
+  		this.p5 = (100 * (65/this.x)).toFixed(2);
+  		this.p6 = (100 * (50/this.x)).toFixed(2);
 
 
         this.doughnutChart = new Chart(this.doughnutCanvas.nativeElement, {

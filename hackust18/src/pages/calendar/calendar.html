@@ -5,14 +5,65 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar>
-    <ion-title>calendar</ion-title>
+    <ion-title>
+      Review My Past Budget
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="addEvent()">
+        <ion-icon name="add-circle"></ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
-
 </ion-header>
 
 
 <ion-content padding>
     
+<ion-card-header>
+        <div style="text-align: center;">
+          <p>Enter the dates for checking</p>
+        </div>
+      </ion-card-header>
+
+
+<ion-toolbar darkergraytoolbar
+             class="toolbarPlan">
+
+  <!--<ion   #dateTime [(ngModel)]="hiddenDate" [hidden]="true"></ion>-->
+  Start Date:
+  <span ion-datepicker
+        (ionChanged)="setDate($event);"
+        [max]="maxDate" [min]="initDateb"
+        [value]="initDate"
+        [showMaxAndMin]="true"
+        clear
+        class="ScheduleDate">
+    <span>{{initDate | date}} <ion-icon name="clipboard" item-left></ion-icon> </span>
+  </span>
+
+</ion-toolbar>
+
+<ion-toolbar darkergraytoolbar
+             class="toolbarPlan">
+  <!--<ion   #dateTime [(ngModel)]="hiddenDate" [hidden]="true"></ion>-->
+  End Date: 
+  <span ion-datepicker
+        (ionChanged)="setDate2($event);"
+        [max]="maxDate2" [min]="initDateb2"
+        [value]="initDate2"
+        [showMaxAndMin]="true"
+        clear
+        class="ScheduleDate">
+    <span>{{initDate2 | date}} <ion-icon name="clipboard" item-left></ion-icon> </span>
+  </span>
+
+</ion-toolbar>
+
+<button ion-button color="primary" (click)='checkDates()'>Check</button>
+
+
+
+  
+  
 </ion-content>

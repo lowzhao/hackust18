@@ -38,6 +38,7 @@ export class TestingPage
 	constructor(public navCtrl: NavController, public navParams: NavParams)
 	{
 		this.progress = 10;
+		// if navParams.get()
 	}
 
 	ionViewDidLoad()
