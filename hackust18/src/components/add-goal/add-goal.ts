@@ -1,16 +1,4 @@
 import { Component } from '@angular/core';
-import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-
-import { clamp, isTrueProperty } from '../../util/util';
-import { Config } from '../../config/config';
-import { DomController } from '../../platform/dom-controller';
-import { Form } from '../../util/form';
-import { Haptic } from '../../tap-click/haptic';
-import { BaseInput } from '../../util/base-input';
-import { Item } from '../item/item';
-import { Platform } from '../../platform/platform';
-import { PointerCoordinates, pointerCoord } from '../../util/dom';
-import { UIEventManager } from '../../gestures/ui-event-manager';
 
 
 
