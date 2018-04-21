@@ -1,0 +1,54 @@
+<!--
+  Generated template for the AddGoalPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>addGoal</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="options"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+		<ion-item>
+				<ion-label color="primary">Item name: </ion-label>
+				<ion-input placeholder="Text Input" [(ngModel)]="title"></ion-input>
+				</ion-item>
+			  
+				<ion-item>
+				<ion-label color="primary">$: </ion-label>
+				<ion-input type="number" [(ngModel)]="cost"></ion-input>
+				</ion-item>
+			
+			
+				  <ion-list>
+				<ion-list-header >
+					<ion-grid>
+						<ion-row><span id="title">Proportion of salary:</span></ion-row>
+						<ion-row class="badge"><ion-badge  item-end color="dark">Car {{structure.lower}}%</ion-badge>
+						<ion-badge item-end color="dark">iPhone {{structure.upper - structure.lower}}%</ion-badge></ion-row>
+						</ion-grid>
+				</ion-list-header>
+				<ion-item>
+				  <ion-range dualKnobs="true" pin="false" [(ngModel)]="structure" (ionChange)="onChange($event)" color="dark">
+					<ion-label range-left>0</ion-label>
+					<ion-label range-right>100</ion-label>
+				  </ion-range>
+				</ion-item>
+			  </ion-list>
+</ion-content>
+
+<ion-footer class="removeTopBorder">
+  <div class="center">
+    <button ion-button round class="marginBottom" (click)="clickd()">Done</button>
+  </div>
+</ion-footer>

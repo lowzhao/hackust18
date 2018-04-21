@@ -22,7 +22,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { AddGoalComponent } from '../components/add-goal/add-goal';
 
 import { CalculatorPage } from '../pages/calculator/calculator';
-
+import { AddGoalPage } from '../pages/add-goal/add-goal';
 
 @NgModule({
   declarations: [
@@ -37,7 +37,8 @@ import { CalculatorPage } from '../pages/calculator/calculator';
     AddGoalComponent,
     GraphpagePage,
 	CalendarPage,
-	CalculatorPage
+	CalculatorPage,
+	AddGoalPage
 	
   ],
   imports: [
@@ -57,7 +58,8 @@ import { CalculatorPage } from '../pages/calculator/calculator';
     AddGoalComponent,
     GraphpagePage,
 	CalendarPage,
-	CalculatorPage
+	CalculatorPage,
+	AddGoalPage
   ],
   providers: [
     StatusBar,

@@ -14,12 +14,14 @@
 
 
 <ion-content padding>
-  <ion-card>
+	<div class="keeper" *ngFor="let a of ak;">
+
+  <ion-card class="marginTop">
     <ion-card-header id="cardHeader">
       <ion-grid class="rmPadding">
         <ion-row>
           <ion-col col-6 class="rmPadding">
-            <div class="TextL">Home</div>
+            <div class="TextL">{{a.ttile}}</div>
           </ion-col>
           <ion-col col-6 class="rmPadding">
             <ion-grid text-right class="">
@@ -27,7 +29,7 @@
                 <div class="small" text-right>Espected to Reach</div>
               </ion-row>
               <ion-row text-right class="small">
-                <div class="small green" text-right>15/02/2023</div>
+                <div class="small green" text-right>{{a.expectation}}</div>
               </ion-row>
             </ion-grid>
           </ion-col>
@@ -37,33 +39,33 @@
     </ion-card-header>
 
     <ion-list>
-        <div class="progress">Progress</div>
-        <div class="progress-outer">
-          <div class="progress-inner" [style.max-width]="progress + '%'">
-            {{progress}}%
-          </div>
+      <div class="progress">Progress</div>
+      <div class="progress-outer">
+        <div class="progress-inner" [style.max-width]="a.progress + '%'">
+          {{a.progress}}%
         </div>
+      </div>
 
-        <ion-grid>
-          <ion-row>
-            <ion-col col-6>
-              <ion-row class="fontM">
-                Funds
-              </ion-row>
-              <ion-row class="fontM green">
-                $40,000
-              </ion-row>
-            </ion-col>
-            <ion-col col-6>
-              <ion-row class="fontM">
-                Pace
-              </ion-row>
-              <ion-row class="fontM green">
-                ON TRACK
-              </ion-row>
-            </ion-col>
-          </ion-row>
-        </ion-grid>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-6>
+            <ion-row class="fontM">
+              Funds
+            </ion-row>
+            <ion-row class="fontM green">
+              ${{a.fund}}
+            </ion-row>
+          </ion-col>
+          <ion-col col-6>
+            <ion-row class="fontM">
+              Pace
+            </ion-row>
+            <ion-row class="fontM green">
+              {{a.condition}}
+            </ion-row>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
 
 
 
@@ -71,15 +73,17 @@
     </ion-list>
   </ion-card>
 
-
-<!-- 
+</div>
+  <!-- 
   <div>___________________________________</div>
   <br> -->
-  <div *ngIf="adding"> <add-goal ></add-goal></div>
- 
+  <div *ngIf="adding">
+    <add-goal></add-goal>
+  </div>
+
 </ion-content>
 <ion-footer class="removeTopBorder">
-	<div class="center">
-		<button  ion-button round class="marginBottom" (click)="clickd()">+ Add Goals</button>
-	</div>
+  <div class="center">
+    <button ion-button round class="marginBottom" (click)="clickd()">+ Add Goals</button>
+  </div>
 </ion-footer>

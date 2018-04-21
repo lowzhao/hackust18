@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { AboutPage } from '../about/about';
+import { AddGoalPage } from '../add-goal/add-goal';
 /**
  * Generated class for the TestingPage page.
  *
@@ -15,11 +15,29 @@ import { AboutPage } from '../about/about';
 })
 export class TestingPage
 {
-	progress : number;
-	adding : boolean;
+
+
+	ak = [
+		{
+			title: "home",
+			expectation: "15/12/2023",
+			progress: 10,
+			fund: 40000,
+			condition: "ON TRACK"
+		}, {
+			title: "home",
+			expectation: "15/12/2023",
+			progress: 10,
+			fund: 40000,
+			condition: "ON TRACK"
+		}
+	];
+	progress: number;
+	adding: boolean;
 
 	constructor(public navCtrl: NavController, public navParams: NavParams)
 	{
+		this.progress = 10;
 	}
 
 	ionViewDidLoad()
@@ -30,8 +48,8 @@ export class TestingPage
 	}
 	clickd()
 	{
-		// this.navCtrl.push(AboutPage);
-		this.adding = true;
+		this.navCtrl.push(AddGoalPage);
+		// this.adding = true;
 
 	}
 

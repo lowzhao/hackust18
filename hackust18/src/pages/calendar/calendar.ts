@@ -14,9 +14,6 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'calendar.html',
 })
 export class CalendarPage {
-demo = 'Navbar';
-  favorites = 'recent';
-  apps = 'free';
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }

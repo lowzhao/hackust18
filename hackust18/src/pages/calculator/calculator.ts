@@ -15,6 +15,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class CalculatorPage {
 
+	demo = 'Navbar';
+	favorites = 'recent';
+	apps = 'free';
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 

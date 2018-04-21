@@ -16,11 +16,7 @@ import { Component } from '@angular/core';
 
 export class AddGoalComponent {
 
-  text: string;
-   structure: any = {lower: 33, upper: 60};
-     onChange(ev: any) {
-    console.log('Changed', ev);
-  }
+  
   
   constructor() {
     
