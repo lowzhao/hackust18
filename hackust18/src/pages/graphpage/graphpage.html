@@ -16,12 +16,15 @@
 <ion-content padding>
 
 
-<ion-card>
+<ion-card style='height:100%'>
       <ion-card-header>
-        Doughnut Chart
+        <div style="text-align: center;">
+          <p>1st Mar, 2018 - 31st Mar, 2018 </p>
+        <p>Total Spending: {{x}}</p>
+        </div>
       </ion-card-header>
-      <ion-card-content>
-        <canvas #doughnutCanvas></canvas>
+      <ion-card-content style='height:100%'>
+        <canvas style='height:100%' #doughnutCanvas></canvas>
       </ion-card-content>
     </ion-card>
 
