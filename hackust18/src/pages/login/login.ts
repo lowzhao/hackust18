@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { AngularFireAuth } from 'angularfire2/auth';
-import firebase from 'firebase';
+
+import { TabsPage } from '../tabs/tabs';
 
 /**
  * Generated class for the LoginPage page.
@@ -18,8 +18,7 @@ import firebase from 'firebase';
 export class LoginPage
 {
 
-	constructor(public navCtrl: NavController, public navParams: NavParams,
-		private fire: AngularFireAuth)
+	constructor(public navCtrl: NavController, public navParams: NavParams)
 	{
 	}
 
@@ -28,18 +27,10 @@ export class LoginPage
 		console.log('ionViewDidLoad LoginPage');
 	}
 
-	loginWithFacebook()
-	{
-		this.fire.auth.signInWithPopup(new firebase.auth.FacebookAuthProvider()).then(res =>
-		{
-			// console.log(res);
-		}
-		)
+	login(){
+		this.navCtrl.push(TabsPage);
 	}
 
-	logoutOfFacebook()
-	{
-
-	}
+	
 
 }

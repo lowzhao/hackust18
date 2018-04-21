@@ -1,5 +1,24 @@
-page-login {
-#fbLogin{
-	margin:2vw;
+page-login {}
+
+#LoginBut {
+  margin: 2em auto;
 }
+
+#RegisterBut {
+  margin: 0em 2em;
+}
+
+#all {
+  width: 100%;
+}
+
+#LoginContent{
+	margin-top:20vh;
+}
+
+.loginReg{
+	
+	display:flex;
+	justify-content: center;
+	margin:0 auto;
 }
