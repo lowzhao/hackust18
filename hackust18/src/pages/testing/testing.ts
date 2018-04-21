@@ -28,7 +28,7 @@ export class TestingPage
 		console.log('ionViewDidLoad TestingPage');
 		this.adding = false;
 	}
-	clicked()
+	clickd()
 	{
 		// this.navCtrl.push(AboutPage);
 		this.adding = true;
