@@ -1,5 +1,5 @@
 import { Component,ViewChild } from '@angular/core';
-import { Chart } from 'chart.js';
+// import { Chart } from 'chart.js';
 
 
 /**
@@ -13,7 +13,7 @@ import { Chart } from 'chart.js';
   templateUrl: 'line-chart.html'
 })
 export class LineChartComponent {
-	@ViewChild('lineChart') lineCanvas;
+	// @ViewChild('lineChart') lineCanvas;
   text: string;
 
   constructor() {
@@ -21,16 +21,16 @@ export class LineChartComponent {
     this.text = 'Hello World';
   }
 
-  stackedLine = new Chart(this.lineCanvas.nativeElement, {
-    type: 'line',
-    data: [200000,2000000,100000,2000000],
-    options: {
-        scales: {
-            yAxes: [{
-                stacked: true
-            }]
-        }
-    }
-});
+//   stackedLine = new Chart(this.lineCanvas.nativeElement, {
+//     type: 'line',
+//     data: [200000,2000000,100000,2000000],
+//     options: {
+//         scales: {
+//             yAxes: [{
+//                 stacked: true
+//             }]
+//         }
+//     }
+// });
 
 }

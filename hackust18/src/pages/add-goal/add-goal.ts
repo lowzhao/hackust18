@@ -21,8 +21,8 @@ export class AddGoalPage
 	{
 
 	}
-title:string;
-cost:number;
+	title: string;
+	cost: number;
 	structure: any = { lower: 33, upper: 60 };
 	onChange(ev: any)
 	{
@@ -38,9 +38,12 @@ cost:number;
 	{
 		this.navCtrl.push(TestingPage,
 			{
-				title:this.title,
-				cost:this.cost,
-				structure:this.structure
+				data: {
+					title: this.title,
+					cost: this.cost,
+					structure: this.structure
+				}
+
 			});
 	}
 

@@ -19,31 +19,45 @@ export class TestingPage
 
 	ak = [
 		{
-			title: "home",
+			title: "Flat",
 			expectation: "15/12/2023",
 			progress: 10,
 			fund: 40000,
 			condition: "ON TRACK"
 		}, {
-			title: "home",
-			expectation: "15/12/2023",
+			title: "Car",
+			expectation: "30/1/2030",
 			progress: 10,
-			fund: 40000,
+			fund: 2000000,
 			condition: "ON TRACK"
 		}
 	];
-	progress: number;
+	// progress: number;
 	adding: boolean;
 
 	constructor(public navCtrl: NavController, public navParams: NavParams)
 	{
-		this.progress = 10;
+		// this.progress = 10;
 		// if navParams.get()
+		var temp = this.navParams.get("data");
+		if (this.navParams.get("data") != undefined)
+		{
+			var dataTemp = {
+				title: temp.title,
+				expectation: "30/1/2030",
+				progress: 0,
+				fund: temp.cost,
+				condition: "ON TRACK"
+			}
+			this.ak.push(dataTemp);
+		}
+
+
 	}
 
 	ionViewDidLoad()
 	{
-		this.progress = 10;
+		// this.progress = 10;
 		console.log('ionViewDidLoad TestingPage');
 		this.adding = false;
 	}
