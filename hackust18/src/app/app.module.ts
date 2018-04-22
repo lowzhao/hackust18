@@ -27,6 +27,8 @@ import { DatePickerModule } from 'ionic3-datepicker';
 import { CalculatorPage } from '../pages/calculator/calculator';
 import { AddGoalPage } from '../pages/add-goal/add-goal';
 
+import { BudgetDailyPage } from '../pages/budget-daily/budget-daily';
+
 @NgModule({
   declarations: [
 	MyApp,
@@ -41,7 +43,8 @@ import { AddGoalPage } from '../pages/add-goal/add-goal';
     GraphpagePage,
 	CalendarPage,
 	CalculatorPage,
-	AddGoalPage
+	AddGoalPage,
+	BudgetDailyPage
 	
   ],
   imports: [
@@ -63,7 +66,8 @@ import { AddGoalPage } from '../pages/add-goal/add-goal';
     GraphpagePage,
 	CalendarPage,
 	CalculatorPage,
-	AddGoalPage
+	AddGoalPage,
+	BudgetDailyPage
   ],
   providers: [
     StatusBar,

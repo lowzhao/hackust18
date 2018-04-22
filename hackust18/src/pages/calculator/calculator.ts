@@ -25,4 +25,9 @@ export class CalculatorPage {
     console.log('ionViewDidLoad CalculatorPage');
   }
 
+  clickd()
+  {
+	  this.navCtrl.push();
+  }
+
 }

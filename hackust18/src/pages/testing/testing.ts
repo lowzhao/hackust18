@@ -14,6 +14,7 @@ import { AddGoalPage } from '../add-goal/add-goal';
 	templateUrl: 'testing.html',
 })
 export class TestingPage
+
 {
 
 

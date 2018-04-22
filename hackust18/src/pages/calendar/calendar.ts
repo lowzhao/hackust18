@@ -7,6 +7,8 @@ import { DatePickerModule } from 'ionic3-datepicker';
 import { DatePickerDirective } from 'ionic3-datepicker';
 import { GraphpagePage } from '../graphpage/graphpage';
 
+import { BudgetDailyPage } from '../budget-daily/budget-daily';
+
 
 /**
  * Generated class for the CalendarPage page.
@@ -74,7 +76,7 @@ export class CalendarPage {
         this.navCtrl.push(GraphpagePage);
       }
       else{
-        //this.navCtrl.push(BalancePage);
+        this.navCtrl.push(BudgetDailyPage);
       }
   }
 

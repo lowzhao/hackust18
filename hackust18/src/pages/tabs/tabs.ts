@@ -19,7 +19,7 @@ export class TabsPage {
   tab2Root = CalculatorPage;
   tab3Root = ContactPage;
   tab4Root = TestingPage;
-  tab5Root = CalendarPage;
+  tab5Root = Testing2Page;
   //GraphpagePage;
   //Testing2Page;  
 
