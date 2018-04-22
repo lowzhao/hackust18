@@ -1,3 +1,22 @@
 page-budget-daily {
 
 }
+
+.item{
+    width: 85%;
+    height: 15%;
+    background-color: aliceblue;
+    margin: 0 auto;
+    clear: both;
+}
+
+.left{
+    float: left;
+    width: 60%;
+}
+
+.right{
+    float: right;
+    width: 40%;
+    font-size: 30px;
+}

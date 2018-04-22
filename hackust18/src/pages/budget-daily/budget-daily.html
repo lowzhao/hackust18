@@ -14,5 +14,33 @@
 
 
 <ion-content padding>
-
+    <div class="item">
+        <div class="left">
+            Name: KFC <br>
+            Category : Food <br> 
+                <ion-item>
+                  <ion-label color="primary"> Date</ion-label>
+                  <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
+                </ion-item>
+          
+        </div>
+        <div class="right" color="red">
+            $-99
+        </div>
+    </div>
+    
+        <div class="item">
+        <div class="left">
+            Name: Student helper <br>
+            Category : Income <br> 
+                <ion-item>
+                  <ion-label color="primary"> Date</ion-label>
+                  <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
+                </ion-item>
+          
+        </div>
+        <div class="right" color="green">
+            $+1133
+        </div>
+    </div>
 </ion-content>

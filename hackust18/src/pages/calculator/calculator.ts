@@ -14,7 +14,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'calculator.html',
 })
 export class CalculatorPage {
-
+    myDate = '2018-04-21';
 	demo = 'Navbar';
 	favorites = 'recent';
 	apps = 'free';
