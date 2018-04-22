@@ -28,6 +28,9 @@ import { CalculatorPage } from '../pages/calculator/calculator';
 import { AddGoalPage } from '../pages/add-goal/add-goal';
 
 import { BudgetDailyPage } from '../pages/budget-daily/budget-daily';
+import { ChartInvPage } from '../pages/chart-inv/chart-inv';
+import { ChartInv2Page } from '../pages/chart-inv2/chart-inv2';
+
 
 @NgModule({
   declarations: [
@@ -44,7 +47,9 @@ import { BudgetDailyPage } from '../pages/budget-daily/budget-daily';
 	CalendarPage,
 	CalculatorPage,
 	AddGoalPage,
-	BudgetDailyPage
+	BudgetDailyPage,
+	ChartInvPage,
+	ChartInv2Page
 	
   ],
   imports: [
@@ -67,7 +72,9 @@ import { BudgetDailyPage } from '../pages/budget-daily/budget-daily';
 	CalendarPage,
 	CalculatorPage,
 	AddGoalPage,
-	BudgetDailyPage
+	BudgetDailyPage,
+	ChartInvPage,
+	ChartInv2Page
   ],
   providers: [
     StatusBar,

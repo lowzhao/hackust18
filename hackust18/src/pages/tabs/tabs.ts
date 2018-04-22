@@ -16,7 +16,7 @@ import { CalendarPage } from '../calendar/calendar';
 export class TabsPage {
 
   tab1Root = HomePage;
-  tab2Root = CalculatorPage;
+  tab2Root = CalendarPage;
   tab3Root = ContactPage;
   tab4Root = TestingPage;
   tab5Root = Testing2Page;

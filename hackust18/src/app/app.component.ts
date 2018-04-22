@@ -3,7 +3,7 @@ import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-import { LoginPage } from '../pages/login/login';
+import { TabsPage } from '../pages/tabs/tabs';
 import { timer } from 'rxjs/observable/timer';
 import { GraphpagePage } from '../pages/graphpage/graphpage';
 import { CalendarPage } from '../pages/calendar/calendar';
@@ -12,7 +12,7 @@ import { CalendarPage } from '../pages/calendar/calendar';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = LoginPage;
+  rootPage:any = TabsPage;
 
   showSplash = false;
 

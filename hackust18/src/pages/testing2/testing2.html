@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>testing2</ion-title>
+    <ion-title>Investment</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -16,14 +16,15 @@
 <ion-content padding>
   <ion-slides class="">
     <ion-slide class="smallerWidth">
-      <h1 class="borBot">Investment tool 1 ▶</h1>
+      <h1 class="borBot">Mutual Funds ▶</h1>
 
-      <button ion-button class="noBackground expand">
+      <button ion-button class="noBackground expand" (click)="clickd1()">
         <ion-card class="noMargin">
           <ion-item class="fillWidth">
-            Bank A Global Large-Cap Blend Equity
+        HSBC Global Large-Cap Blend Equity
           </ion-item>
           <ion-item class="fillWidth">
+
             Trailing Return (%)
           </ion-item>
           <ion-item class="fillWidth">
@@ -51,13 +52,14 @@
     </ion-slide>
     <ion-slide class="smallerWidth">
       <!-- <ion-start>◀</ion-start> -->
-	  <h1 class="borBot"> Investment tool2 </h1>
+	  <h1 class="borBot"> Equity Fund </h1>
 	  
 	  
-      <button ion-button class="noBackground expand">
+      <button ion-button class="noBackground expand" (click)="clickd2()">
         <ion-card class="noMargin">
+		
           <ion-item class="fillWidth">
-            Bank B China Equity
+            Bank of China Equity
           </ion-item>
           <ion-item class="fillWidth">
             Trailing Return (%)
@@ -85,7 +87,7 @@
       <!-- <ion-end>▶</ion-end> -->
     </ion-slide>
     <ion-slide class="smallerWidth fillHeight">
-      <h1 class="borBot">◀ Slide 3</h1>
+      <h1 class="borBot">◀ Stock</h1>
       <div class="expand">asdasdasd</div>
     </ion-slide>
   </ion-slides>

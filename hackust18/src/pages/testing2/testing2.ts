@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ChartInvPage } from '../chart-inv/chart-inv';
+import { ChartInv2Page } from '../chart-inv2/chart-inv2';
 
 /**
  * Generated class for the Testing2Page page.
@@ -22,4 +24,10 @@ export class Testing2Page {
     console.log('ionViewDidLoad Testing2Page');
   }
 
+  clickd1(){
+	  this.navCtrl.push(ChartInvPage);
+  }
+  clickd2(){
+	this.navCtrl.push(ChartInv2Page);
+}
 }

@@ -20,7 +20,7 @@ export class TestingPage
 
 	ak = [
 		{
-			title: "Flat",
+			title: "Car",
 			expectation: "15/12/2023",
 			progress: 10,
 			fund: 40000,
