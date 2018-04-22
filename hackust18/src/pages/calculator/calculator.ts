@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { TestingPage } from '../testing/testing';
 
 /**
  * Generated class for the CalculatorPage page.
@@ -27,7 +28,7 @@ export class CalculatorPage {
 
   clickd()
   {
-	  this.navCtrl.push();
+	  this.navCtrl.push(TestingPage);
   }
 
 }

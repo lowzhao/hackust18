@@ -25,12 +25,6 @@ export class TestingPage
 			progress: 10,
 			fund: 40000,
 			condition: "ON TRACK"
-		}, {
-			title: "Car",
-			expectation: "30/1/2030",
-			progress: 10,
-			fund: 2000000,
-			condition: "ON TRACK"
 		}
 	];
 	// progress: number;

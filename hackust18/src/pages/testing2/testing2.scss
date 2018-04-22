@@ -12,6 +12,10 @@ page-testing2 {
 	height:60vh;
 }
 
+.noBackground{
+	background-color:white;
+}
+
 .fillHeight{
 	height:100%;
 }
@@ -25,4 +29,11 @@ page-testing2 {
 .fillWidth{
 	width:100%;
 	background : white;
+	display:block;
+}
+
+.noMargin{
+	padding: 0;
+	margin:0;
+
 }

@@ -14,7 +14,7 @@ import { CalendarPage } from '../pages/calendar/calendar';
 export class MyApp {
   rootPage:any = LoginPage;
 
-  showSplash = true;
+  showSplash = false;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {
