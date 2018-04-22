@@ -16,18 +16,42 @@
 	  <ion-content padding>
 		  
 		<ion-toolbar no-border-top *ngIf="demo != 'Title'">
-		  <ion-segment [(ngModel)]="apps">
-			<ion-segment-button value="paid">
-			  Paid
+		  <ion-segment class="blank" [(ngModel)]="apps">
+			<ion-segment-button selected="true" value="Expense">
+			  Expense
 			</ion-segment-button>
-			<ion-segment-button value="free">
-			  Free
+			<ion-segment-button value="Income">
+			  Income
 			</ion-segment-button>
-			<ion-segment-button value="top">
-			  Top
+			<ion-segment-button value="Transfer">
+			  Transfer
 			</ion-segment-button>
 		  </ion-segment>
 		</ion-toolbar>
 	  
+          <div>
+          <ion-item class="center">
+                <ion-label>$</ion-label>
+                <ion-input type="tel"></ion-input>
+            </ion-item>
+          </div>
+          
+            <ion-item>
+                <ion-label color="primary">Category</ion-label>
+                <ion-input placeholder="Food"></ion-input>
+            </ion-item>
+
+          
+          
+          <ion-item>
+  <ion-label color="primary"> Date</ion-label>
+  <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate"></ion-datetime>
+</ion-item>
+          
 	  </ion-content>
 	  
+<ion-footer class="removeTopBorder">
+  <div class="center">
+    <button ion-button round class="marginBottom" (click)="clickd()">Done</button>
+  </div>
+</ion-footer>
